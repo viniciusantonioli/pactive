@@ -8,6 +8,6 @@ class Pactive {
   static send(String webhook, Map args) async{
     Response response;
     Dio dio = new Dio();
-    response = await dio.post(webhook.toString(), data: jsonEncode(args));
+    response = await dio.post(webhook, data: jsonEncode(args));
   }
 }
